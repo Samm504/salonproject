@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="772.0" prefWidth="547.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <ImageView fitHeight="772.0" fitWidth="547.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/Appointment%20Form.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="nameTF" layoutX="118.0" layoutY="109.0" prefHeight="10.0" prefWidth="179.0" />
+      <TextField fx:id="genderTF" layoutX="130.0" layoutY="134.0" prefHeight="25.0" prefWidth="167.0" />
+      <TextField fx:id="addressTF" layoutX="130.0" layoutY="159.0" prefHeight="25.0" prefWidth="167.0" />
+      <TextField fx:id="emailTF" layoutX="351.0" layoutY="109.0" prefHeight="25.0" prefWidth="143.0" />
+      <TextField fx:id="phoneTF" layoutX="351.0" layoutY="134.0" prefHeight="25.0" prefWidth="143.0" />
+      <TextField fx:id="memidTF" layoutX="409.0" layoutY="159.0" prefHeight="25.0" prefWidth="85.0" />
+      <RadioButton fx:id="firstYes" layoutX="304.0" layoutY="188.0" mnemonicParsing="false">
+         <toggleGroup>
+            <ToggleGroup fx:id="first" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="firstNo" layoutX="375.0" layoutY="188.0" mnemonicParsing="false" toggleGroup="$first" />
+      <RadioButton fx:id="haveNo" layoutX="375.0" layoutY="233.0" mnemonicParsing="false">
+         <toggleGroup>
+            <ToggleGroup fx:id="have" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="haveYes" layoutX="304.0" layoutY="233.0" mnemonicParsing="false" toggleGroup="$have" />
+      <TextField fx:id="productTF" layoutX="229.0" layoutY="280.0" prefHeight="25.0" prefWidth="256.0" />
+      <RadioButton fx:id="beautician1" layoutX="72.0" layoutY="372.0" mnemonicParsing="false">
+         <toggleGroup>
+            <ToggleGroup fx:id="beautician" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="beautician2" layoutX="72.0" layoutY="391.0" mnemonicParsing="false" toggleGroup="$beautician" />
+      <RadioButton fx:id="beautician3" layoutX="72.0" layoutY="410.0" mnemonicParsing="false" toggleGroup="$beautician" />
+      <CheckBox fx:id="haircutCB" layoutX="72.0" layoutY="486.0" mnemonicParsing="false" />
+      <CheckBox fx:id="hairstyleCB" layoutX="72.0" layoutY="534.0" mnemonicParsing="false" />
+      <CheckBox fx:id="scalptreatCB" layoutX="72.0" layoutY="550.0" mnemonicParsing="false" />
+      <CheckBox fx:id="hotoiltreatCB" layoutX="72.0" layoutY="566.0" mnemonicParsing="false" />
+      <CheckBox fx:id="keratintreatCB" layoutX="72.0" layoutY="587.0" mnemonicParsing="false" />
+      <CheckBox fx:id="hairdetoxCB" layoutX="72.0" layoutY="606.0" mnemonicParsing="false" />
+      <CheckBox fx:id="manicureCB" layoutX="72.0" layoutY="623.0" mnemonicParsing="false" />
+      <CheckBox fx:id="pedicureCB" layoutX="72.0" layoutY="641.0" mnemonicParsing="false" />
+      <CheckBox fx:id="hardwaxCB" layoutX="72.0" layoutY="658.0" mnemonicParsing="false" />
+      <CheckBox fx:id="softwaxCB" layoutX="72.0" layoutY="675.0" mnemonicParsing="false" />
+      <DatePicker fx:id="apptDate" layoutX="67.0" layoutY="727.0" prefHeight="25.0" prefWidth="196.0" />
+      <ChoiceBox fx:id="timeChoiceBox" layoutX="292.0" layoutY="727.0" prefHeight="25.0" prefWidth="167.0" />
+      <Button fx:id="submit" layoutX="453.0" layoutY="379.0" mnemonicParsing="false" onAction="#submit" rotate="-90.0" text="Make an Appointment" />
+      <CheckBox fx:id="haircolorCB" layoutX="72.0" layoutY="502.0" mnemonicParsing="false" onAction="#checkCheckBox" />
+      <CheckBox fx:id="hairbleachCB" layoutX="72.0" layoutY="518.0" mnemonicParsing="false" onAction="#checkCheckBox" />
+   </children>
+</AnchorPane>
